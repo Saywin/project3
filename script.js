@@ -39,7 +39,6 @@ const switchActivePlayer = function(){
     player0Element.classList.toggle('player--active'); 
     player1Element.classList.toggle('player--active'); 
 }; 
-
 btnRoll.addEventListener('click', function(){
     if (isPlaying){ 
    const diceNumber = Math.trunc(Math.random() * 6) + 1;
@@ -53,7 +52,6 @@ btnRoll.addEventListener('click', function(){
         switchActivePlayer()
     }}
 })
-
 btnHold.addEventListener('click', function(){
     if(isPlaying){
     totalScores[activePlayer] += currentScore; 
